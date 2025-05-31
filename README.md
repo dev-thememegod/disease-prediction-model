@@ -1,17 +1,48 @@
-# disease-prediction-model
-This project demonstrates the implementation and comparison of multiple machine learning classification models—K-Nearest Neighbors (KNN), Logistic Regression, Random Forest, and Support Vector Machine (SVM)—to predict various diseases based on patient data.
+# Disease Prediction Using Machine Learning
 
-Key Features:
-Data preprocessing and feature engineering
+This repository contains a machine learning project for disease diagnosis based on symptoms data. The goal is to predict diseases accurately using various classification algorithms such as Logistic Regression, K-Nearest Neighbors (KNN), Random Forest, and Support Vector Machine (SVM).
 
-Model training, evaluation, and comparison
+---
 
-Detailed performance metrics including accuracy, precision, recall, F1-score, and confusion matrix for each model
+## Project Overview
 
-Analysis of model strengths and reasons behind varying accuracies
+Healthcare professionals can benefit greatly from automated diagnostic tools. This project demonstrates how machine learning models can be trained on symptom data (binary encoded) to classify diseases with high accuracy.
 
-Jupyter Notebook with clean, well-commented code for easy understanding and reproducibility
+---
 
-Dataset:
-The dataset contains patient records with labeled disease classes including Arthritis, Asthma, COVID-19, Depression, Diabetes, Hypertension, Malaria, Migraine, Pneumonia, and Tuberculosis.
+## Dataset
 
+- The dataset consists of 5000+ samples with symptoms represented as binary features (`0` or `1`).
+- Each sample corresponds to a specific disease (target variable named `prognosis`).
+- Each disease has at least 8 associated symptoms.
+- Real-world diseases and their corresponding symptoms are used.
+
+---
+
+## Models Implemented
+
+- **Logistic Regression**
+- **K-Nearest Neighbors (KNN)**
+- **Random Forest Classifier**
+- **Support Vector Machine (SVM)**
+
+Each model was trained, validated, and tested on the dataset. Performance metrics such as accuracy, precision, recall, F1-score, and confusion matrices were calculated and compared.
+
+---
+
+## Results Summary
+
+| Model               | Accuracy |
+|---------------------|----------|
+| Logistic Regression  | 0.990    |
+| K-Nearest Neighbors  | 0.989    |
+| Random Forest       | 0.989    |
+| Support Vector Machine (SVM) | 0.992    |
+
+All models demonstrated excellent performance on this dataset, with SVM achieving the highest accuracy.
+
+---
+
+## Visualizations
+
+Visual comparison of model accuracies is included using Matplotlib bar charts. Confusion matrices and detailed classification reports are also provided to analyze model performance.
